@@ -1,7 +1,11 @@
 <%= form_for @user do|f| %>
-	 <%= f.text_field :name %>
-	 <%= f.text_field :email %>
-	 <%= f.password_field :password %>
-	 <%= f.password_field :password_confirmation %>
-	 <%= f.submit " CREATE ACCOUNT" %>
+	 <%= f.label value="Username" %>
+	 <%= f.text_field :name %></br>
+	 <%= f.label value="Email Address" %>
+	 <%= f.text_field :email %></br>
+	 <%= f.label value="Enter Password" %>
+	 <%= f.password_field :password %></br>
+	 <%= f.label value= "Confirm Password" %>
+	 <%= f.password_field :password_confirmation %></br>
+	 <%= f.submit " Create account" %>
 <% end %>
